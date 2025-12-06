@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Year’s Red Envelope</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- MUSIC -->
+    <audio id="bg-music" loop>
+        <source id="music-src" src="assets/music.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- BANNER -->
+    <h1 class="banner">✨ New Year’s Red Envelope ✨</h1>
+
+    <!-- LÂN TẢ TRÁI PHẢI -->
+    <img id="lan-left" class="lan" src="assets/lan-left.png">
+    <img id="lan-right" class="lan" src="assets/lan-right.png">
+
+    <!-- NÚT BẬT NHẠC -->
+    <button id="toggle-music">Play Music</button>
+
+    <!-- KHU VỰC LÌ XÌ -->
+    <div id="envelope-area"></div>
+
+    <!-- HIỆN KẾT QUẢ -->
+    <div id="result-box" class="hidden">
+        <h2 id="reward-text"></h2>
+        <button id="play-again">Play Again</button>
+    </div>
+
+    <!-- HOA MAI RƠI -->
+    <div id="petals"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
