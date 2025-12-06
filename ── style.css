@@ -1,1 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("assets/bg.jpg"); /* thay link nền của bạn */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
 
+/* BANNER */
+.banner {
+    text-align: center;
+    font-size: 42px;
+    color: gold;
+    margin-top: 20px;
+    text-shadow: 0 0 10px yellow, 0 0 25px orange;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 12px gold; }
+    to { text-shadow: 0 0 30px red; }
+}
+
+/* CON LÂN */
+.lan {
+    width: 200px;
+    position: absolute;
+    top: 120px;
+    animation: bling 1.5s infinite alternate;
+}
+#lan-left { left: 20px; }
+#lan-right { right: 20px; }
+
+@keyframes bling {
+    from { filter: drop-shadow(0 0 10px gold); }
+    to { filter: drop-shadow(0 0 25px orange); }
+}
+
+/* NÚT NHẠC */
+#toggle-music,
+#play-again {
+    padding: 12px 25px;
+    background: red;
+    color: yellow;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: bling 1.2s infinite alternate;
+    margin-top: 30px;
+}
+
+#toggle-music {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* VÙNG LÌ XÌ */
+#envelope-area {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 250px;
+}
+
+.envelope {
+    width: 120px;
+    cursor: pointer;
+    animation: bling 1.5s infinite alternate;
+}
+
+/* KẾT QUẢ */
+#result-box {
+    text-align: center;
+    margin-top: 40px;
+}
+.hidden { display: none; }
+
+/* HOA MAI */
+#petals {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+}
+.petal {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-image: url("assets/flower.png");
+    background-size: cover;
+    animation: fall 4s linear infinite;
+    opacity: 0.9;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-70px) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+}
